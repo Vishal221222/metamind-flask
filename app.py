@@ -10,7 +10,7 @@ app.config["MYSQL_HOST"] = 'sql12.freesqldatabase.com'
 app.config["MYSQL_USER"] = 'sql12825997'
 app.config["MYSQL_PASSWORD"] = 'ltwT2KKmZw'
 app.config["MYSQL_DB"] = 'sql12825997'
-app.config["MYSQL_PORT"] = '3306'
+app.config["MYSQL_PORT"] = 3306
 
 mysql=MySQL(app)
 login_manage=LoginManager()

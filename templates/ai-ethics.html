@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>AI Ethics | MetaMind</title>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='ai-ethics.css') }}" />
+
+  <!-- If not using Flask, use:
+  <link rel="stylesheet" href="ai-ethics.css" />
+  -->
+</head>
+<body>
+
+<header class="hero">
+  <nav class="navbar">
+    <div class="logo">◆ MetaMind</div>
+
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="#principles">Principles</a></li>
+      <li><a href="#risks">Risks</a></li>
+      <li><a href="#governance">Governance</a></li>
+      <li><a href="#books">Books</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero-content">
+    <span class="badge">AI • RESPONSIBILITY • SOCIETY</span>
+
+    <h1>AI Ethics</h1>
+
+    <p>
+      AI Ethics studies how artificial intelligence should be designed, deployed,
+      governed, and controlled so that it remains fair, safe, transparent,
+      accountable, privacy-respecting, and beneficial to society.
+    </p>
+
+    <a href="#intro" class="hero-btn">Start Learning</a>
+  </div>
+</header>
+
+<main>
+
+<section id="intro" class="section">
+  <h2>What is AI Ethics?</h2>
+
+  <p>
+    AI Ethics is the study of moral, social, legal, and technical questions
+    created by artificial intelligence systems. It asks how AI should make
+    decisions, who is responsible when AI causes harm, how data should be used,
+    and how society can benefit from AI without increasing inequality, bias,
+    surveillance, manipulation, or risk.
+  </p>
+
+  <p>
+    Artificial intelligence is now used in search engines, recommendation
+    systems, hiring tools, facial recognition, healthcare, banking, education,
+    policing, advertising, social media, autonomous vehicles, and generative AI.
+    Because these systems affect real people, AI must be developed with ethical
+    responsibility.
+  </p>
+
+  <div class="cards">
+    <div class="info-card">
+      <span class="card-icon">⚖</span>
+      <h3>Fairness</h3>
+      <p>
+        AI systems should not discriminate against people based on gender, caste,
+        religion, race, disability, income, language, or social background.
+      </p>
+    </div>
+
+    <div class="info-card">
+      <span class="card-icon">🔍</span>
+      <h3>Transparency</h3>
+      <p>
+        Users and regulators should be able to understand how important AI-based
+        decisions are made.
+      </p>
+    </div>
+
+    <div class="info-card">
+      <span class="card-icon">🛡</span>
+      <h3>Safety</h3>
+      <p>
+        AI systems should be tested, monitored, and controlled so they do not
+        create physical, financial, emotional, or social harm.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="principles" class="section">
+  <h2>Core Principles of AI Ethics</h2>
+
+  <div class="cards">
+
+    <div class="info-card">
+      <h3>Fairness and Non-Discrimination</h3>
+      <p>
+        AI should treat people fairly. If an AI model is trained on biased data,
+        it may repeat or amplify social discrimination. Ethical AI requires bias
+        detection, representative datasets, and fairness testing.
+      </p>
+    </div>
+
+    <div class="info-card">
+      <h3>Accountability</h3>
+      <p>
+        When AI causes harm, responsibility should not disappear. Developers,
+        companies, governments, and deployers must be accountable for AI behavior,
+        design choices, and consequences.
+      </p>
+    </div>
+
+    <div class="info-card">
+      <h3>Transparency and Explainability</h3>
+      <p>
+        People should know when they are interacting with AI. High-impact systems
+        should provide clear explanations for decisions such as loan rejection,
+        job screening, medical diagnosis, or legal risk scoring.
+      </p>
+    </div>
+
+    <div class="info-card">
+      <h3>Privacy and Data Protection</h3>
+      <p>
+        AI depends heavily on data. Ethical AI requires consent, data minimization,
+        secure storage, anonymization where possible, and protection against data
+        misuse.
+      </p>
+    </div>
+
+    <div class="info-card">
+      <h3>Human Oversight</h3>
+      <p>
+        AI should support human decision-making, not blindly replace human
+        judgment in critical areas. Human review is important in healthcare,
+        law, defense, education, and finance.
+      </p>
+    </div>
+
+    <div class="info-card">
+      <h3>Beneficence</h3>
+      <p>
+        AI should be designed to benefit people and society. It should improve
+        quality of life, reduce harm, expand opportunity, and support human
+        dignity.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section id="risks" class="section">
+  <h2>Major Ethical Risks in AI</h2>
+
+  <p>
+    AI systems can create serious risks when they are trained on poor data,
+    deployed without testing, optimized for harmful incentives, or used without
+    human accountability.
+  </p>
+
+  <div class="cards">
+
+    <div class="info-card">
+      <h3>Algorithmic Bias</h3>
+      <p>
+        AI can produce unfair results if training data reflects historical
+        discrimination or if the model learns patterns that disadvantage certain
+        groups.
+      </p>
+    </div>
+
+    <div class="info-card">
+      <h3>Surveillance</h3>
+      <p>
+        AI-powered facial recognition, tracking, and behavior prediction can
+        threaten privacy and civil liberties if used without safeguards.
+      </p>
+    </div>
+
+    <div class="info-card">
+      <h3>Misinformation</h3>
+      <p>
+        Generative AI can create fake images, deepfakes, fake news, synthetic
+        voices, spam, fraud, and manipulative political content.
+      </p>
+    </div>
+
+    <div class="info-card">
+      <h3>Job Displacement</h3>
+      <p>
+        Automation can increase productivity, but it may also replace workers,
+        change required skills, and create economic inequality.
+      </p>
+    </div>
+
+    <div class="info-card">
+      <h3>Black-Box Decisions</h3>
+      <p>
+        Some AI models are difficult to explain. This becomes dangerous when
+        people are affected by decisions they cannot question or understand.
+      </p>
+    </div>
+
+    <div class="info-card">
+      <h3>Loss of Human Control</h3>
+      <p>
+        Highly autonomous systems may behave unpredictably if their goals,
+        incentives, or operating environments are not carefully controlled.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="section process-section">
+  <h2>Responsible AI Development Lifecycle</h2>
+
+  <div class="process-grid">
+
+    <div class="process-card">
+      <span>01</span>
+      <h3>Define Purpose</h3>
+      <p>
+        Clearly define why the AI system is being built, who it affects, what
+        problem it solves, and whether AI is actually necessary.
+      </p>
+    </div>
+
+    <div class="process-card">
+      <span>02</span>
+      <h3>Collect Data Responsibly</h3>
+      <p>
+        Use lawful, relevant, representative, and privacy-respecting data.
+        Remove unnecessary personal information.
+      </p>
+    </div>
+
+    <div class="process-card">
+      <span>03</span>
+      <h3>Test Bias and Safety</h3>
+      <p>
+        Evaluate model performance across different user groups and test for
+        harmful failure cases before deployment.
+      </p>
+    </div>
+
+    <div class="process-card">
+      <span>04</span>
+      <h3>Explain Decisions</h3>
+      <p>
+        Provide understandable explanations, especially when AI affects access
+        to jobs, loans, education, healthcare, or legal rights.
+      </p>
+    </div>
+
+    <div class="process-card">
+      <span>05</span>
+      <h3>Deploy with Oversight</h3>
+      <p>
+        Keep humans in the loop for critical decisions and create a process for
+        appeal, review, correction, and complaint handling.
+      </p>
+    </div>
+
+    <div class="process-card">
+      <span>06</span>
+      <h3>Monitor Continuously</h3>
+      <p>
+        AI systems can degrade over time. Monitor accuracy, bias, security,
+        misuse, user impact, and unexpected behavior.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="section">
+  <h2>AI Ethics Framework</h2>
+
+  <div class="resource-box">
+    <h3>Checklist for Ethical AI</h3>
+
+    <p>
+      Before launching an AI system, teams should ask practical ethical questions.
+      These questions help reduce harm and improve trust.
+    </p>
+
+    <div class="quick-list">
+      <p><strong>Purpose:</strong> Is the AI system solving a real and legitimate problem?</p>
+      <p><strong>Data:</strong> Was the data collected lawfully and with respect for privacy?</p>
+      <p><strong>Bias:</strong> Has the model been tested across different groups and contexts?</p>
+      <p><strong>Explanation:</strong> Can affected users understand or challenge the decision?</p>
+      <p><strong>Security:</strong> Is the system protected against attacks, misuse, and data leaks?</p>
+      <p><strong>Oversight:</strong> Is there a responsible human or team accountable for outcomes?</p>
+    </div>
+  </div>
+</section>
+
+<section id="governance" class="section">
+  <h2>AI Governance</h2>
+
+  <p>
+    AI governance means creating rules, processes, policies, audits, and
+    responsibilities for the safe and ethical use of AI. Governance is needed
+    because AI decisions can affect millions of people at scale.
+  </p>
+
+  <div class="comparison-grid">
+
+    <div class="comparison-card">
+      <h3>Internal Governance</h3>
+      <p>
+        Companies should create AI review boards, ethics policies, model risk
+        assessments, documentation, incident reporting, and approval workflows.
+      </p>
+    </div>
+
+    <div class="comparison-card">
+      <h3>External Regulation</h3>
+      <p>
+        Governments and regulators may require transparency, privacy protection,
+        safety testing, user rights, and penalties for harmful AI deployment.
+      </p>
+    </div>
+
+    <div class="comparison-card">
+      <h3>Model Audits</h3>
+      <p>
+        Independent audits can test whether AI systems are biased, unsafe,
+        inaccurate, insecure, or harmful to vulnerable groups.
+      </p>
+    </div>
+
+    <div class="comparison-card">
+      <h3>Documentation</h3>
+      <p>
+        Model cards, data sheets, risk reports, and decision logs help teams
+        track how AI systems are built and used.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="section">
+  <h2>High-Risk AI Areas</h2>
+
+  <div class="cards">
+
+    <div class="info-card">
+      <h3>Healthcare</h3>
+      <p>
+        AI can support diagnosis and treatment, but wrong predictions can harm
+        patients. Medical AI requires careful validation and human oversight.
+      </p>
+    </div>
+
+    <div class="info-card">
+      <h3>Hiring and Employment</h3>
+      <p>
+        AI hiring tools can screen resumes and rank candidates, but they may
+        reproduce gender, caste, class, race, or language bias.
+      </p>
+    </div>
+
+    <div class="info-card">
+      <h3>Finance and Credit</h3>
+      <p>
+        AI used in loans, insurance, and fraud detection must be fair,
+        explainable, and legally compliant.
+      </p>
+    </div>
+
+    <div class="info-card">
+      <h3>Education</h3>
+      <p>
+        AI tutoring and grading tools should protect student privacy, avoid bias,
+        and not replace teacher judgment blindly.
+      </p>
+    </div>
+
+    <div class="info-card">
+      <h3>Policing and Security</h3>
+      <p>
+        Predictive policing and facial recognition can create serious civil rights
+        risks if used without strict controls.
+      </p>
+    </div>
+
+    <div class="info-card">
+      <h3>Generative AI</h3>
+      <p>
+        Text, image, audio, and video generation can help creativity, but also
+        create misinformation, deepfakes, copyright issues, and impersonation.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="section">
+  <h2>AI Ethics Timeline</h2>
+
+  <div class="timeline-wrapper">
+    <div class="timeline-line"></div>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <h3>Early AI</h3>
+        <p>
+          AI research focused on symbolic reasoning, problem solving, expert
+          systems, and machine intelligence.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <h3>Machine Learning Growth</h3>
+        <p>
+          Data-driven AI systems became more powerful, making data bias and
+          model transparency important ethical concerns.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <h3>Big Data Era</h3>
+        <p>
+          Large-scale data collection created new concerns about surveillance,
+          consent, profiling, and privacy.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <h3>Generative AI</h3>
+        <p>
+          AI systems began producing text, images, audio, code, and video,
+          increasing concerns about authenticity and misuse.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <h3>AI Governance</h3>
+        <p>
+          Organizations and governments increasingly focus on safety testing,
+          accountability, regulation, and responsible deployment.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>AI Ethics in Real Life</h2>
+
+  <div class="cards">
+
+    <div class="info-card">
+      <h3>Recommendation Algorithms</h3>
+      <p>
+        Social media and video platforms use AI to recommend content. Ethical
+        concerns include addiction, polarization, manipulation, and mental health.
+      </p>
+    </div>
+
+    <div class="info-card">
+      <h3>Autonomous Vehicles</h3>
+      <p>
+        Self-driving systems must handle safety, responsibility, accident
+        decisions, sensor errors, and real-world uncertainty.
+      </p>
+    </div>
+
+    <div class="info-card">
+      <h3>Chatbots and Assistants</h3>
+      <p>
+        AI chatbots should avoid harmful advice, misinformation, manipulation,
+        privacy leaks, and overconfidence.
+      </p>
+    </div>
+
+    <div class="info-card">
+      <h3>AI in Courts</h3>
+      <p>
+        Risk assessment tools used in legal systems must be transparent and
+        carefully audited to prevent unfair outcomes.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="section">
+  <h2>Common Misconceptions</h2>
+
+  <div class="cards">
+
+    <div class="info-card">
+      <h3>“AI is always objective.”</h3>
+      <p>
+        AI systems learn from data created by humans and institutions. If the
+        data is biased, the AI can also become biased.
+      </p>
+    </div>
+
+    <div class="info-card">
+      <h3>“Ethics slows innovation.”</h3>
+      <p>
+        Ethical design can prevent failures, lawsuits, public backlash, unsafe
+        products, and loss of trust.
+      </p>
+    </div>
+
+    <div class="info-card">
+      <h3>“Only developers are responsible.”</h3>
+      <p>
+        Responsibility is shared among designers, managers, companies, regulators,
+        data providers, and users.
+      </p>
+    </div>
+
+    <div class="info-card">
+      <h3>“More data always means better AI.”</h3>
+      <p>
+        More data can increase performance, but it can also increase privacy
+        risks, noise, bias, and unnecessary surveillance.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="section">
+  <h2>Quick Glossary</h2>
+
+  <div class="glossary-grid">
+
+    <div class="glossary-item">
+      <h3>Bias</h3>
+      <p>Systematic unfairness in data, model behavior, or decision outcomes.</p>
+    </div>
+
+    <div class="glossary-item">
+      <h3>Explainability</h3>
+      <p>The ability to understand why an AI system produced a result.</p>
+    </div>
+
+    <div class="glossary-item">
+      <h3>Accountability</h3>
+      <p>The responsibility for AI decisions, harms, and governance.</p>
+    </div>
+
+    <div class="glossary-item">
+      <h3>Alignment</h3>
+      <p>Making AI systems act according to human values and intended goals.</p>
+    </div>
+
+    <div class="glossary-item">
+      <h3>Data Privacy</h3>
+      <p>Protecting personal information from misuse, leakage, and exploitation.</p>
+    </div>
+
+    <div class="glossary-item">
+      <h3>Human Oversight</h3>
+      <p>Keeping humans involved in monitoring and controlling AI systems.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="books" class="section">
+  <h2>Recommended Books with Links</h2>
+
+  <p>
+    These books are useful for beginners, students, developers, policy learners,
+    and anyone interested in responsible artificial intelligence.
+  </p>
+
+  <div class="book-grid">
+
+    <div class="book-card">
+      <span class="level">Beginner</span>
+      <h3>Human Compatible</h3>
+      <p><strong>Author:</strong> Stuart Russell</p>
+      <p>
+        Explains the AI control problem and why AI systems should be redesigned
+        around human-compatible objectives.
+      </p>
+      <a href="https://www.penguinrandomhouse.com/books/566677/human-compatible-by-stuart-russell/" target="_blank" class="download-btn">Official Page</a>
+    </div>
+
+    <div class="book-card">
+      <span class="level">Beginner</span>
+      <h3>Weapons of Math Destruction</h3>
+      <p><strong>Author:</strong> Cathy O’Neil</p>
+      <p>
+        Shows how algorithms and mathematical models can increase inequality,
+        unfairness, and social harm.
+      </p>
+      <a href="https://books.google.com/books/about/Weapons_of_Math_Destruction.html?id=NgEwCwAAQBAJ" target="_blank" class="download-btn">Preview / Read More</a>
+    </div>
+
+    <div class="book-card">
+      <span class="level">Intermediate</span>
+      <h3>The Alignment Problem</h3>
+      <p><strong>Author:</strong> Brian Christian</p>
+      <p>
+        Explores machine learning, human values, bias, and the challenge of
+        teaching AI systems what humans really want.
+      </p>
+      <a href="https://brianchristian.org/the-alignment-problem/" target="_blank" class="download-btn">Official Page</a>
+    </div>
+
+    <div class="book-card">
+      <span class="level">Intermediate</span>
+      <h3>Atlas of AI</h3>
+      <p><strong>Author:</strong> Kate Crawford</p>
+      <p>
+        Examines AI through power, politics, labor, data extraction, environment,
+        and the hidden costs of AI systems.
+      </p>
+      <a href="https://yalebooks.yale.edu/book/9780300264630/atlas-of-ai/" target="_blank" class="download-btn">Publisher Page</a>
+    </div>
+
+    <div class="book-card">
+      <span class="level">Intermediate</span>
+      <h3>Artificial Unintelligence</h3>
+      <p><strong>Author:</strong> Meredith Broussard</p>
+      <p>
+        Explains why technology does not always get things right and why human
+        judgment remains essential.
+      </p>
+      <a href="https://mitpress.mit.edu/9780262537018/artificial-unintelligence/" target="_blank" class="download-btn">MIT Press Page</a>
+    </div>
+
+    <div class="book-card">
+      <span class="level">Advanced</span>
+      <h3>Superintelligence</h3>
+      <p><strong>Author:</strong> Nick Bostrom</p>
+      <p>
+        Discusses long-term AI risks, machine intelligence, strategy, control,
+        and the future of advanced AI systems.
+      </p>
+      <a href="https://global.oup.com/academic/product/superintelligence-9780199678112" target="_blank" class="download-btn">OUP Page</a>
+    </div>
+
+    <div class="book-card">
+      <span class="level">Advanced</span>
+      <h3>Artificial Intelligence: A Modern Approach</h3>
+      <p><strong>Author:</strong> Stuart Russell & Peter Norvig</p>
+      <p>
+        A major AI textbook useful for understanding the technical background
+        behind AI ethics and responsible AI.
+      </p>
+      <a href="https://aima.cs.berkeley.edu/" target="_blank" class="download-btn">Official Site</a>
+    </div>
+
+  </div>
+</section>
+
+<section class="section">
+  <h2>Mini Quiz</h2>
+
+  <div class="quiz-box">
+
+    <div class="quiz-item">
+      <h3>1. What is AI Ethics?</h3>
+      <p>
+        AI Ethics studies how artificial intelligence should be designed and used
+        responsibly so that it remains fair, safe, accountable, transparent, and
+        beneficial.
+      </p>
+    </div>
+
+    <div class="quiz-item">
+      <h3>2. Why is bias a problem in AI?</h3>
+      <p>
+        Bias can make AI systems treat people unfairly, especially when training
+        data reflects historical discrimination or incomplete representation.
+      </p>
+    </div>
+
+    <div class="quiz-item">
+      <h3>3. What is human oversight?</h3>
+      <p>
+        Human oversight means humans remain responsible for monitoring, reviewing,
+        correcting, and controlling AI systems, especially in high-risk areas.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 MetaMind. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

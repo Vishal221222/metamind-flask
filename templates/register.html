@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Register | MetaMind</title>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='register.css') }}" />
+</head>
+<body>
+
+  <div class="auth-page">
+
+    <nav class="navbar">
+      <div class="logo">◆ MetaMind</div>
+
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/login">Login</a></li>
+      </ul>
+    </nav>
+
+    <div class="auth-container">
+
+      <div class="auth-card">
+        <span class="auth-badge">JOIN • LEARN • EXPLORE</span>
+
+        <h1>Create Account</h1>
+
+        <p class="auth-subtitle">
+          Register yourself and start exploring psychology, philosophy,
+          economics, biology, AI ethics, and more.
+        </p>
+        {% if error %}
+  <div class="error-box">
+    {{ error }}
+  </div>
+{% endif %}
+        
+
+
+        <form action='/Register' method="POST">
+
+          <div class="input-group">
+            <label>Username</label>
+            <input type="text" name="username" placeholder="Create username" required />
+          </div>
+
+          <div class="input-group">
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Enter email address" required />
+          </div>
+
+          <div class="input-group">
+            <label>Password</label>
+            <input type="password" name="password" placeholder="Create password" required />
+          </div>
+
+
+          <button type="submit" class="auth-btn">Create Account</button>
+
+        </form>
+
+        <p class="switch-text">
+          Already have an account?
+          <a href="/Login">Login here</a>
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>

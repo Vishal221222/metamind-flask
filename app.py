@@ -6,11 +6,11 @@ app=Flask(__name__)
 app.secret_key = os.environ.get("SECRET_KEY", "dev-secret-key")
 
 
-app.config["MYSQL_HOST"] = 'sql12.freesqldatabase.com'
-app.config["MYSQL_USER"] = 'sql12825997'
-app.config["MYSQL_PASSWORD"] = 'ltwT2KKmZw'
-app.config["MYSQL_DB"] = 'sql12825997'
-app.config["MYSQL_PORT"] = 3306
+app.config["MYSQL_HOST"] = 'gateway01.ap-southeast-1.prod.alicloud.tidbcloud.com'
+app.config["MYSQL_USER"] = '3C7PHDMsP5jWjoa.root'
+app.config["MYSQL_PASSWORD"] = 'EzCmTJuYGV0JqVAz'
+app.config["MYSQL_DB"] = 'sys'
+app.config["MYSQL_PORT"] = 4000
 
 mysql=MySQL(app)
 login_manage=LoginManager()
